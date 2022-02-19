@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Karla:wght@300&display=swap');
+
+*{
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main_container{
+    height: 100vh;
+   
+}
+
+.left_side , .masd, main{
+    background-image: url(./Assets/My\ project.jpg);
+    background-color: #000000;
+    padding: 10%;
+}
+
+nav{
+    background-color: #000000;
+}
+
+main{
+    height: 100%;   
+    padding: 0;
+    background-color: #324B4A;
+    overflow: hidden;      
+}
+
+header{
+    height: 20vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #00AAA9;
+    font-size: 30px;
+}
+
+.nav_options{
+    height: 65vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+
+
+}
+
+li a:hover {
+    background-color: #7BB6B4;
+    color: white;
+}
+
+footer{
+    height: 15vh;
+    color: #00AAA9;
+    justify-content: center;
+    background-color: #000000;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00AAA9;
+}
+
+/*carrusel*/
+
+.carousel-inner>.carousel-item>img{
+    width: 100%;
+    height:100%;
+}
+
+
+.masd{
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.main_form{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #324B4A;  
+    white-space:nowrap;
+
+}
+
+#parr, #contact_box{
+    text-align: left;
+    border: solid black;
+    padding: 1%;
+    background-color: #202b2a;
+    color: rgb(134, 134, 134) ;
+}
