@@ -12,9 +12,8 @@
    
 }
 
-.left_side , .masd, main{
-    background-image: url(./Assets/My\ project.jpg);
-    background-color: #000000;
+.left_side , .masd, .main_form{
+    background-image: url(/Assets/My\ project.jpg); 
     padding: 10%;
 }
 
@@ -93,7 +92,6 @@ footer a{
     height: 100vh;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #324B4A;  
     white-space:nowrap;
 
 }
