@@ -1,0 +1,4 @@
+@mixin height_bckgcol ($height,$back_col) {
+    height:$height;
+    background-color: $back_col;
+}

@@ -1,16 +1,103 @@
-footer{
-    p{
-        color: grey;
-    }
-   
+/*Mixin*/
+@mixin height_bckgcol ($height,$back_col) {
+    height:$height;
+    background-color: $back_col;
 }
+/*map*/
+$colors: (
+    "grey_":#324B4A,
+    "black_": #000000,
+    "hf_blue": #00AAA9,
+    "hover_blue": #7BB6B4,
+    "white_": white,
+    "form_grey": #202b2a
+);
 
-#parr{
-    h1{
-        color: rgb(0, 0, 0);
+.main_container{
+    height: 100vh;
+
+    nav{
+       background-color: map-get($colors,black_)
+        
     }
-}
+    
+    .left_side, .masd {
+        background-image: url(https://ibb.co/XYmjnNL);
+        padding: 10%;
+    }
+    
+    main{
+        @include height_bckgcol(100%,#324B4A);
+        overflow: hidden;   
+    }
 
-.left_side, .main_form, .masd{
-    background-color: black;
+    header{
+        @include height_bckgcol(20vh, #000000);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: map-get($colors, hf_blue );
+            font-size: 30px;
+        }
+    }
+
+    li{
+        &:hover{
+            background-color: #7BB6B4;
+            color: white;
+        }
+    }
+
+    footer{
+        @include height_bckgcol(15vh, #000000);
+        color: map-get($colors, hf_blue );
+        justify-content: center;
+      
+        a{
+            text-decoration: none;
+            color: #00AAA9;
+        }
+    }
+
+    .carousel_inner{
+        .carousel-item{
+            img{
+                width: 100%;
+                height:100%;
+            }
+        }
+    }
+
+    .masd{
+        height: 100vh;
+        display: flex;
+        color: map-get($colors, white_ );
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .main_form{
+        @extend .masd;
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        white-space:nowrap;
+    
+    }
+
+    #parr, #contact_box{
+        text-align: left;
+        border: solid black;
+        padding: 1%;
+        background-color: map-get($colors, form_grey );
+        color: rgb(134, 134, 134) ;
+    }
+
+ 
 }
