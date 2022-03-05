@@ -1,7 +1,7 @@
-/*Mixin*/
-/*map*/
+@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Karla:wght@300&display=swap");
 .main_container {
   height: 100vh;
+  font-family: 'Karla';
 }
 
 .main_container nav {
@@ -9,8 +9,8 @@
 }
 
 .main_container .left_side, .main_container .masd, .main_container .main_form {
-  background-image: url(https://ibb.co/XYmjnNL);
-  padding: 10%;
+  background-image: url(../scss/Myproject2.jpg);
+  padding: 3%;
 }
 
 .main_container main {
@@ -46,12 +46,32 @@
   height: 15vh;
   background-color: #000000;
   color: #00AAA9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.main_container footer a {
+.main_container footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_container footer div a {
   text-decoration: none;
   color: #00AAA9;
 }
@@ -90,11 +110,16 @@
   white-space: nowrap;
 }
 
+.main_container .main_form h1 {
+  font-size: 25px;
+}
+
 .main_container #parr, .main_container #contact_box {
   text-align: left;
   border: solid black;
   padding: 1%;
   background-color: #202b2a;
   color: #868686;
+  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
